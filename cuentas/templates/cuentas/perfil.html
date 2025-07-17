@@ -1,0 +1,11 @@
+{% extends 'peliculas/base.html' %}
+
+{% block content %}
+<div class="container" style="text-align: center;">
+  <h2>Perfil de usuario</h2>
+  <img src="{{ user.profile.avatar.url }}" alt="Avatar" style="width: 150px; border-radius: 50%; margin-bottom: 20px;">
+  <p><strong>Usuario:</strong> {{ user.username }}</p>
+  <p><strong>Email:</strong> {{ user.email }}</p>
+  <p><strong>Fecha de ingreso:</strong> {{ user.date_joined|date:"d/m/Y" }}</p>
+</div>
+{% endblock %}

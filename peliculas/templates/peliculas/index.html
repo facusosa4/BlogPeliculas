@@ -1,0 +1,11 @@
+{% extends 'peliculas/base.html' %}
+
+{% block content %}
+<div class="hero">
+  <h1><span>Blog Películas</span></h1>
+  <p>Explorá, creá y compartí tu pasión por el cine.</p>
+  <a href="{% url 'crear_pelicula' %}" class="hero-btn">
+    <i class="fas fa-plus"></i> Cargar nueva película
+  </a>
+</div>
+{% endblock %}

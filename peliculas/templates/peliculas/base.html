@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Películas</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>🎬 Blog Películas</h1>
+    <nav>
+      <a href="{% url 'inicio' %}"><i class="fas fa-home"></i> Inicio</a> |
+      <a href="{% url 'crear_pelicula' %}"><i class="fas fa-film"></i> Película</a> |
+      <a href="{% url 'crear_director' %}"><i class="fas fa-user-tie"></i> Director</a> |
+      <a href="{% url 'crear_critica' %}"><i class="fas fa-pen"></i> Crítica</a> |
+      <a href="{% url 'buscar_pelicula' %}"><i class="fas fa-search"></i> Buscar</a> |
+      <a href="{% url 'lista_criticas' %}"><i class="fas fa-comments"></i> Críticas</a> |
+      <a href="{% url 'about' %}"><i class="fas fa-info-circle"></i> Acerca de mí</a> |
+      <a href="{% url 'perfil' %}"><i class="fas fa-user"></i> Mi perfil</a>
+    </nav>
+  </header>
+
+  {% block content %}
+  {% endblock %}
+
+  <footer>
+    <p>© 2025 · Blog Películas</p>
+  </footer>
+</body>
+</html>
