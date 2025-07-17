@@ -2,6 +2,11 @@
 
 Proyecto web desarrollado con Django para gestionar películas, directores y críticas. Incluye perfiles de usuario con avatar, búsqueda avanzada y diseño moderno.
 
+## 🎥 Video de demostración
+
+Podés ver el funcionamiento del proyecto en el siguiente video:
+https://drive.google.com/file/d/1W1EaCVwR9aeTuRwYnt-yqLSjlrN82iT7/view?usp=drive_link
+
 ## 🚀 Funcionalidades
 
 - Crear, editar y listar películas
