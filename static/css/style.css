@@ -1,0 +1,110 @@
+/* Fuente y fondo general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('/static/img/fondo-cine.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+header {
+  background-color: rgba(44, 62, 80, 0.9);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navegación */
+nav a {
+  color: #ecf0f1;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+  background-color: rgba(44, 62, 80, 0.9);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Títulos */
+h2 {
+  color: #34495e;
+}
+
+/* Botones */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #c0392b;
+}
