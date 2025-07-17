@@ -1,73 +1,36 @@
-# 🎬 BlogPelículas — Proyecto Django
-Este proyecto es parte de la entrega final del curso de Programación en Python de CoderHouse. Se trata de una aplicación estilo blog desarrollada con Django, que permite gestionar películas, directores y críticas, junto con funcionalidades de búsqueda y sistema de usuarios.
+# 🎬 BlogPelículas
 
-## 🧩 ¿Qué se puede hacer?
-- Cargar una nueva película  
-- Cargar un director  
-- Cargar una crítica  
-- Buscar películas por su título  
-- Ver el listado completo y el detalle de cada película  
-- Acceder a la sección “Acerca de mí”  
-- Registrarse, iniciar sesión, cerrar sesión y acceder al perfil de usuario
+Proyecto web desarrollado con Django para gestionar películas, directores y críticas. Incluye perfiles de usuario con avatar, búsqueda avanzada y diseño moderno.
 
-## 🚀 ¿En qué orden se prueba?
-1. Cargar directores  
-2. Cargar películas vinculadas a esos directores  
-3. Agregar críticas para cada película  
-4. Utilizar la búsqueda por título  
-5. Probar navegación entre vistas y sistema de login
+## 🚀 Funcionalidades
 
-## 🛠️ ¿Cómo se usa?
-1. Clonar o descargar el proyecto  
-2. Activar el entorno virtual  
-3. Instalar dependencias necesarias:  
-   pip install django  
-   pip install ckeditor  
-4. En la terminal, correr:  
-   python manage.py makemigrations  
-   python manage.py migrate  
-   python manage.py runserver  
-5. Abrir el navegador y acceder a: http://localhost:8000/
+- Crear, editar y listar películas
+- Agregar directores y asociarlos a películas
+- Publicar críticas con puntaje y autor
+- Ver perfil de usuario con avatar
+- Navegación clara y diseño responsive
 
-## 📍 Rutas principales
-- /crear_director/ → Cargar directores  
-- /crear/ → Cargar películas  
-- /crear_critica/ → Cargar críticas  
-- /buscar_pelicula/ → Buscar películas por nombre  
-- /cuentas/registro/ → Crear una cuenta  
-- /cuentas/login/ → Iniciar sesión  
-- /cuentas/logout/ → Cerrar sesión  
-- /cuentas/perfil/ → Ver perfil del usuario  
-- /about/ → Ver sección Acerca de mí
+## 🛠️ Tecnologías
 
-## 📂 Estructura relevante
-BlogPeliculas/  
-├── BlogPeliculas/  
-│   └── static/css/style.css  
-├── peliculas/  
-│   └── templates/peliculas/  
-│       ├── base.html  
-│       ├── crear_pelicula.html  
-│       ├── editar_pelicula.html  
-│       ├── borrar_pelicula.html  
-│       ├── lista_peliculas.html  
-│       ├── detalle_pelicula.html  
-│       ├── crear_director.html  
-│       ├── crear_critica.html  
-│       ├── buscar_pelicula.html  
-│       └── about.html  
-├── cuentas/  
-│   └── templates/cuentas/  
-│       ├── registro.html  
-│       ├── login.html  
-│       └── perfil.html
+- Python 3.12  
+- Django 5.2  
+- SQLite  
+- CKEditor  
+- Font Awesome  
+- HTML, CSS
 
-## 💡 Notas técnicas
-- Se utiliza herencia de plantillas con base.html  
-- Todos los formularios están protegidos con {% csrf_token %}  
-- La búsqueda de películas se realiza usando coincidencia parcial (icontains)  
-- Se usa LoginRequiredMixin y @login_required en vistas sensibles  
-- Se aplicó un estilo básico a través de CSS en style.css 
+## 📦 Instalación
 
+bash
+git clone https://github.com/facusosa4/BlogPeliculas.git
+cd BlogPeliculas
+python -m venv venv
+source venv/bin/activate  # o venv\Scripts\activate en Windows
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
 
-Facundo Sosa · CoderHouse · 2025
+## 📄 Licencia
+
+Este proyecto fue desarrollado por Facundo Sosa como parte del curso de programación en CoderHouse.
+Uso educativo.
